@@ -1,6 +1,5 @@
 import { posts } from "@/app/lib/placeholder-data";
 import Post from "@/app/ui/components/posts/Post";
-import { GetStaticPropsContext } from "next";
 
 interface Params {
   id: string;
