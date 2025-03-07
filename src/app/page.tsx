@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,6 +14,22 @@ export default function Home() {
                           Go to Blog
                         </a>
                     </div>
+                    <div className="relative flex justify-center items-center">
+                        <Image 
+                          src="/image-desktop2.jpg" 
+                          width={1000} 
+                          height={760} 
+                          className="hidden rounded-md md:block z-10"
+                          alt="screenshots of the dashboard project showing desktop version"
+                        />
+                        <Image 
+                          src="/image-mobile.jpg" 
+                          width={560} 
+                          height={620} 
+                          className="block rounded-md md:hidden"
+                          alt="screenshots of the dashboard project showing mobile version"
+                        />
+                      </div>
                 </div>
 
             </div>
