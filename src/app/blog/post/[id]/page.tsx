@@ -5,7 +5,11 @@ interface Params {
   id: string;
 }
 
-export default function Page({ params }: { params: Params }) {
+interface PageProps {
+  params: Params;
+}
+
+export default function Page({ params }: PageProps) {
   const post = posts.find((post) => post.id === params.id);
   if (!post || !post.id || !post.title || !post.content || !post.date) {
     return <div>Post not found</div>;
